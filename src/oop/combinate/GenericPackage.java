@@ -4,7 +4,7 @@ public class GenericPackage {
     private final String uniqueId;
     private double weight;
     private String packageName;
-    private String courierName;
+    private static String courierName;
 
     public GenericPackage(String uniqueId, double weight, String packageName) {
         this.uniqueId = uniqueId;
@@ -21,8 +21,8 @@ public class GenericPackage {
         return courierName;
     }
 
-    public void setCourierName(String courierName) {
-        this.courierName = courierName;
+    public static void setCourierName(String courierName) {
+        GenericPackage.courierName = courierName;
     }
 
     public String getPackageName() {
@@ -46,6 +46,13 @@ public class GenericPackage {
         return true;
     }
 
+    public boolean checkId() {
+        if (this.conditie1() && this.conditie2() && this.conditie3() && this.conditie4() && this.conditie5()) {
+            return true;
+        }
+        return false;
+    }
+
     private boolean conditie2() {
 
         int counter = 0;
@@ -61,5 +68,31 @@ public class GenericPackage {
         return false;
     }
 
+    private boolean conditie3() {
+        int suma = 0;
+        for (int i = 0; i < this.uniqueId.length(); i++) {
+            suma += Character.getNumericValue(this.uniqueId.charAt(i));
+        }
+        if (suma % 4 == 0) {
+            return true;
+        }
+        return false;
 
+    }
+
+    private boolean conditie4() {
+        for (int i = 0; i < this.uniqueId.length(); i++) {
+            if (Character.getNumericValue(this.uniqueId.charAt(i)) - Character.getNumericValue(this.uniqueId.charAt(i + 1)) < 5) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean conditie5() {
+        if (this.uniqueId.length() >= 10 && this.uniqueId.length() <= 12) {
+            return true;
+        }
+        return false;
+    }
 }

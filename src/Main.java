@@ -48,7 +48,7 @@ public class Main {
             student[i] = new Student(nume, prenume, varsta, facultate, matricol);
         }
         int contor = 0;
-        for (int i = 0;i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             String prenume = student[i].getPrenume();
             if (prenume.compareTo("Ion") == 0)
                 contor++;
@@ -57,11 +57,16 @@ public class Main {
 
         // sfarsit testare studenti
 
+//testare Generic Package
+        GenericPackage.setCourierName("DevCarry");
+        GenericPackage genericPackage = new GenericPackage("213142341425", 4.2, "LaptopDustPro");
+        genericPackage.addItem(5);
+        System.out.println(genericPackage.checkId());
+        System.out.println(genericPackage.computeDetails());
 
+        // sfarsit testare genericPackage
 
     }
-            // sfarsit testare studenti
-
 
 
 //
@@ -159,7 +164,7 @@ public class Main {
 //
 
 
-            }
+}
 
 
 
