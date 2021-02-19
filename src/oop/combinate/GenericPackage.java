@@ -34,12 +34,32 @@ public class GenericPackage {
     }
 
 
-
     public String computeDetails() {
         String text = "Pachetul " + this.packageName + " avand codul " + this.uniqueId + " si greutatea " + this.weight + " apartine curierului " + this.courierName;
         return text;
     }
 
+    public boolean conditie1() {
+        for (int i = 0; i < uniqueId.length(); i++) {
+            if (Character.isDigit(uniqueId.charAt(i)) == false) return false;
+        }
+        return true;
+    }
+
+    private boolean conditie2() {
+
+        int counter = 0;
+        for (int i = 0; i < this.uniqueId.length(); i++) {
+            int curentDigit = Character.getNumericValue(this.uniqueId.charAt(i));
+            if (curentDigit % 2 == 1) {
+                counter++;
+            }
+        }
+        if (counter % 3 == 0) {
+            return true;
+        }
+        return false;
+    }
 
 
 }
