@@ -2,6 +2,8 @@
 
 
 import oop.combinate.*;
+import oop.interfaces.Rectangle;
+import oop.interfaces.Shape;
 
 import java.util.Scanner;
 
@@ -9,64 +11,69 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        ContBancar cont0 = new ContBancar(20000);
-        ContBancarExtins cont1 = new ContBancarExtins(10000, 5);
-        cont0.afisare();
-        cont1.afisare();
-        cont0.adauga(500);
-        cont1.adauga(500);
-        cont0.afisare();
-        cont1.afisare();
-        cont0.extrage(100);
-        cont1.extrage(200);
-        cont0.afisare();
-        cont1.afisare();
-        cont1.adaugaDobandaLunara();
-        cont1.afisare();
-        B b = new B();
 
-        System.out.println("Durata de calcul a metodei calcul(90 factorial) este " + (double) b.durataCalcul(90) + "milisecunde");
-
-        // testare persoane studenti
-
-
-        Student student[] = new Student[3];
-        Scanner scanner = new Scanner(System.in);
-        for (int i = 0; i < 3; i++) {
-            String nume, prenume, facultate;
-            int varsta, matricol;
-            System.out.println("Nume: ");
-            nume = scanner.next();
-            System.out.println("Prenume: ");
-            prenume = scanner.next();
-            System.out.println("Varsta: ");
-            varsta = scanner.nextInt();
-            System.out.println("Facultate: ");
-            facultate = scanner.next();
-            System.out.println("Matricol: ");
-            matricol = scanner.nextInt();
-            student[i] = new Student(nume, prenume, varsta, facultate, matricol);
-        }
-        int contor = 0;
-        for (int i = 0; i < 3; i++) {
-            String prenume = student[i].getPrenume();
-            if (prenume.compareTo("Ion") == 0)
-                contor++;
-        }
-        System.out.println(contor);
-
-        // sfarsit testare studenti
-
-//testare Generic Package
-        GenericPackage.setCourierName("DevCarry");
-        GenericPackage genericPackage = new GenericPackage("213142341425", 4.2, "LaptopDustPro");
-        genericPackage.addItem(5);
-        System.out.println(genericPackage.checkId());
-        System.out.println(genericPackage.computeDetails());
-
-        // sfarsit testare genericPackage
 
     }
+//        // testare cont bancar
+//        ContBancar cont0 = new ContBancar(20000);
+//        ContBancarExtins cont1 = new ContBancarExtins(10000, 5);
+//        cont0.afisare();
+//        cont1.afisare();
+//        cont0.adauga(500);
+//        cont1.adauga(500);
+//        cont0.afisare();
+//        cont1.afisare();
+//        cont0.extrage(100);
+//        cont1.extrage(200);
+//        cont0.afisare();
+//        cont1.afisare();
+//        cont1.adaugaDobandaLunara();
+//        cont1.afisare();
+//        B b = new B();
+//        // sfarsit testare cont bancar
+//
+//        System.out.println("Durata de calcul a metodei calcul(90 factorial) este " + (double) b.durataCalcul(90) + "milisecunde");
+//
+//        // testare persoane studenti
+//
+//
+//        Student student[] = new Student[3];
+//        Scanner scanner = new Scanner(System.in);
+//        for (int i = 0; i < 3; i++) {
+//            String nume, prenume, facultate;
+//            int varsta, matricol;
+//            System.out.println("Nume: ");
+//            nume = scanner.next();
+//            System.out.println("Prenume: ");
+//            prenume = scanner.next();
+//            System.out.println("Varsta: ");
+//            varsta = scanner.nextInt();
+//            System.out.println("Facultate: ");
+//            facultate = scanner.next();
+//            System.out.println("Matricol: ");
+//            matricol = scanner.nextInt();
+//            student[i] = new Student(nume, prenume, varsta, facultate, matricol);
+//        }
+//        int contor = 0;
+//        for (int i = 0; i < 3; i++) {
+//            String prenume = student[i].getPrenume();
+//            if (prenume.compareTo("Ion") == 0)
+//                contor++;
+//        }
+//        System.out.println(contor);
+//
+//        // sfarsit testare studenti
+//
+////testare Generic Package
+//        GenericPackage.setCourierName("DevCarry");
+//        GenericPackage genericPackage = new GenericPackage("213142341425", 4.2, "LaptopDustPro");
+//        genericPackage.addItem(5);
+//        System.out.println(genericPackage.checkId());
+//        System.out.println(genericPackage.computeDetails());
+//
+//        // sfarsit testare genericPackage
+//
+//    }
 
 
 //
