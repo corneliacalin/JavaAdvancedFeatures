@@ -2,6 +2,7 @@ package oop.exceptions;
 
 
 import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -32,6 +33,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("intr un sir");
         n = scanner.next();
+        System.out.println("intr un double");
+        double y=scanner.nextDouble();
+        Locale currentLocale = Locale.getDefault();
+        System.out.println(currentLocale);
         try {
             Integer.parseInt(n);
             System.out.println("INT "+ Integer.parseInt(n));
@@ -45,8 +50,8 @@ public class Main {
         }
         // sf int double string
 
-//        String doubleString1="10,5";
-//        System.out.println(Double.valueOf(Double.parseDouble(doubleString1)));
+        String doubleString1="10.5";
+        System.out.println(Double.valueOf(Double.parseDouble(doubleString1)));
 
 //        try (Scanner scanner = new Scanner(System.in)) {
 //            if (scanner.hasNextInt()) {

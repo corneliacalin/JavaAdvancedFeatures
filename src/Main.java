@@ -1,11 +1,11 @@
 
 
 
-import oop.combinate.*;
-import oop.interfaces.Rectangle;
-import oop.interfaces.Shape;
-
-import java.util.Scanner;
+//import oop.combinate.*;
+//import oop.interfaces.Rectangle;
+//import oop.interfaces.Shape;
+//
+//import java.util.Scanner;
 
 
 public class Main {
@@ -14,10 +14,10 @@ public class Main {
 
 
     }
-//        // testare cont bancar
+////        // testare cont bancar
 //        ContBancar cont0 = new ContBancar(20000);
-//        ContBancarExtins cont1 = new ContBancarExtins(10000, 5);
-//        cont0.afisare();
+//       ContBancarExtins cont1 = new ContBancarExtins(10000, 5);
+//        cont0.afisare()
 //        cont1.afisare();
 //        cont0.adauga(500);
 //        cont1.adauga(500);
@@ -30,7 +30,7 @@ public class Main {
 //        cont1.adaugaDobandaLunara();
 //        cont1.afisare();
 //        B b = new B();
-//        // sfarsit testare cont bancar
+        // sfarsit testare cont bancar
 //
 //        System.out.println("Durata de calcul a metodei calcul(90 factorial) este " + (double) b.durataCalcul(90) + "milisecunde");
 //
