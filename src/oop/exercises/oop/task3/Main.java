@@ -6,10 +6,10 @@ public class Main {
         System.out.println(shape);
         Shape1 circle = new Circle1("blue", true, 20);
         System.out.println(circle);
-//        Shape rectangle = new Rectangle("yellow", true, 20, 30);
-//        System.out.println(rectangle);
-//        Shape square = new Square("green", false, 40);
-//        System.out.println(square);
+        Shape1 rectangle = new Rectangle1("yellow", true, 20, 30);
+        System.out.println(rectangle);
+        Shape1 square = new Square1("green", false, 40);
+        System.out.println(square);
     }
 }
 

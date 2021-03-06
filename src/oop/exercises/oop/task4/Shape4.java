@@ -1,17 +1,17 @@
-package oop.exercises.oop.task3;
+package oop.exercises.oop.task4;
 
+public abstract class Shape4 {
+    protected String color;
+    protected boolean isFilled;
+    public abstract float getPerimeter();
+    public abstract float getArea();
 
-
-public class Shape1 {
-    String color;
-    boolean isFilled;
-
-    public Shape1() {
+    public Shape4() {
         color = "unknown";
         isFilled = false;
     }
 
-    public Shape1(String color, boolean isFilled) {
+    public Shape4(String color, boolean isFilled) {
         this.color = color;
         this.isFilled = isFilled;
     }
@@ -42,3 +42,7 @@ public class Shape1 {
         }
     }
 }
+
+
+
+

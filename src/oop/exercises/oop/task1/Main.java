@@ -37,5 +37,12 @@ public class Main {
         point3d.setXY(400,800);
         System.out.println(point3d);
 
+            Line line = new Line(10, 20, 30, 40);
+        System.out.println(line);
+            System.out.println(line.getLength());
+            System.out.println(line.getMiddlePoint());
+        }
     }
-}
+
+
+
