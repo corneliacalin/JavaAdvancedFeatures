@@ -1,6 +1,6 @@
 package oop.inheritance;
 
-public class Duck extends Animal {
+public class Duck extends Animals {
     @Override
     public void eat() {
         System.out.println("The Duck is eating");

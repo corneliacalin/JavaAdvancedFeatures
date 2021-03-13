@@ -1,7 +1,7 @@
 package oop.inheritance;
 
 
-public class Animal {
+public class Animals {
 
     protected int age;
 
